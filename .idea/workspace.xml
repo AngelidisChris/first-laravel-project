@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b32c59a2-ac31-49f6-a1f9-058c544c1642" name="Default Changelist" comment="" />
+    <list default="true" id="b32c59a2-ac31-49f6-a1f9-058c544c1642" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48e8fcfe-a0da-4c8c-9bed-c0e154727c56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48e8fcfe-a0da-4c8c-9bed-c0e154727c56.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +72,9 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="my-first-project" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -161,6 +170,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1SwxMuCSJK03XNqGtyczATniUSX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -168,6 +178,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../presets" />
@@ -226,6 +237,8 @@
       <workItem from="1572710879934" duration="12215000" />
       <workItem from="1572787918595" duration="1957000" />
       <workItem from="1572887132975" duration="12043000" />
+      <workItem from="1572912976785" duration="1831000" />
+      <workItem from="1572959949709" duration="3400000" />
     </task>
     <servers />
   </component>
@@ -254,17 +267,21 @@
     </state>
     <state x="1477" y="259" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572908411511" />
     <state x="3384" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1572710424778" />
-    <state x="1476" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1572787938622">
+    <state x="1476" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1572959975384">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1476" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572787938622" />
+    <state x="1476" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572959975384" />
+    <state x="1570" y="385" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1572968886011">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1570" y="385" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572968886011" />
     <state x="1448" y="424" width="757" height="628" key="find.popup" timestamp="1572713325715">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1448" y="424" width="757" height="628" key="find.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572713325715" />
-    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1572896363973">
+    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1572968615902">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572896363973" />
+    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572968615902" />
   </component>
 </project>
