@@ -6,6 +6,7 @@ use App\Company;
 use App\Customer;
 use App\Events\NewCustomerHasRegisteredEvent;
 use App\Mail\WelcomeNewUserMail;
+use Intervention\Image\Facades\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -19,7 +20,8 @@ class CustomersController extends Controller
     public function index()
     {
 
-        $customers = Customer::all();
+        // get customer list with pagination
+        $customers = Customer::with('company')->paginate(20);
 
         return view('customers.index', compact('customers'));
     }
@@ -33,17 +35,12 @@ class CustomersController extends Controller
 
     public function store()
     {
-        $data = \request()->validate([
-            'name' => 'required|min:3',
-            'email' => 'required|email',
-            'active' => 'required',
-            'company_id' => 'required'
-        ]);
+        $this->authorize('create', Customer::class);
+        $customer =  Customer::create($this->validateRequest(-1));
 
-        $customer =  Customer::create($data);
+        $this->storeImage($customer);
 
         event(new NewCustomerHasRegisteredEvent($customer));
-
 
         return redirect('customers');
     }
@@ -61,22 +58,45 @@ class CustomersController extends Controller
 
     public function update(Customer $customer)
     {
-        $data = \request()->validate([
-            'name' => 'required|min:3',
-            'email' => 'required|email',
-            'active' => 'required',
-            'company_id' => 'required'
-        ]);
+        $customer->update($this->validateRequest($customer->id));
 
-        $customer->update($data);
+        $this->storeImage($customer);
 
-        return redirect('/customers/' . $customer->id);
+        return redirect('customers/' . $customer->id);
     }
 
     public function destroy(Customer $customer)
     {
+        $this->authorize('delete', $customer);
         $customer->delete();
 
-        return redirect('/customers');
+        return redirect('customers');
+    }
+
+    private function validateRequest($id)
+    {
+        return (\request()->validate([
+            'name' => 'required|min:3',
+            'email' => ['required','email',\Illuminate\Validation\Rule::unique('customers')->ignore($id)],
+            'active' => 'required',
+            'company_id' => 'required',
+            'image' => 'sometimes|file|image|max:5000'
+
+        ]));
+    }
+
+
+    private function storeImage($customer)
+    {
+        if (\request()->has('image'))
+        {
+
+            $customer->update([
+                'image' => \request()->image->store('uploads', 'public'),
+            ]);
+
+            $image = Image::make(public_path('storage/') . $customer->image)->fit(300, 300);
+            $image->save();
+        }
     }
 }

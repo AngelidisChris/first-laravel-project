@@ -11,11 +11,11 @@
 
     <div class="row">
         <div class="col-12">
-            <form action="{{ route('customers.update', ['id' => $customer->id]) }}" method="post" class="pb-5">
+            <form action=" {{ route('customers.update', ['customer' => $customer]) }}" method="post" class="pb-5" enctype="multipart/form-data">
                 @method('PATCH')
                 @include('customers.form')
 
-                <button class="btn btn-primary btn-block" type="submit">Save Customer</button>
+                <button class="btn btn-primary btn-block " type="submit">Save Customer</button>
             </form>
         </div>
     </div>

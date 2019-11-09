@@ -30,3 +30,5 @@ Vue.component('my-button', require('./components/myButton.vue').default);
 const app = new Vue({
     el: '#app',
 });
+
+

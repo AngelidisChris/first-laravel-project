@@ -1,4 +1,3 @@
-@method('')
 @csrf
 <div class="form-group">
     <label class="col-form-label" for="name">Name</label>
@@ -41,10 +40,22 @@
 
     <select name="company_id" id="company_id" class="form-control">
         @foreach($companies as $company)
-            <option value="{{ $company->id }}" {{ $company->id == $customer->company->id  ? 'selected' : '' }}>"{{ $company->name }}"</option>
+            <option value="{{ $company->id }}" {{ $company->id == $customer->company->id  ? 'selected' : '' }}>{{ $company->name }}</option>
         @endforeach
     </select>
 
+</div>
+
+<div class="form-group d-flex flex-column">
+
+    <label for="image">Profile Image</label>
+
+    <input id="image" type="file" name="image" class="form-control-file @error('image') is-invalid @enderror py-2">
+
+
+    @error('image')
+    <span class="invalid-feedback" role="alert"><strong>{{ $errors->first('image') }}</strong></span>
+    @enderror
 </div>
 
 

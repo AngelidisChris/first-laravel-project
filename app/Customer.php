@@ -55,7 +55,7 @@ class Customer extends Model
 
 
     protected $fillable = [
-        'name', 'email', 'active', 'company_id'
+        'name', 'email', 'active', 'company_id', 'image'
     ];
 
     public function company()
