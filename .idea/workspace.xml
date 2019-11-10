@@ -1,47 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b32c59a2-ac31-49f6-a1f9-058c544c1642" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/AddCompanyCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Phone.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Policies/CustomerPolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CompanyFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CustomerFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_09_224451_create_phones_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CompaniesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CustomersTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/mix-manifest.json" afterDir="false" />
+    <list default="true" id="b32c59a2-ac31-49f6-a1f9-058c544c1642" name="Default Changelist" comment="all working properly">
+      <change afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_09_231014_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_09_233025_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_09_233305_create_role_user_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/48e8fcfe-a0da-4c8c-9bed-c0e154727c56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48e8fcfe-a0da-4c8c-9bed-c0e154727c56.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-first-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-first-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_01_162145_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_01_162145_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +70,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
         <item name="jobs: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database1.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="roles: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -234,7 +209,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="sshConsole" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -286,15 +261,36 @@
       <workItem from="1572959949709" duration="17675000" />
       <workItem from="1572999297578" duration="2217000" />
       <workItem from="1573135266969" duration="12455000" />
-      <workItem from="1573325171536" duration="14339000" />
+      <workItem from="1573325171536" duration="18230000" />
     </task>
+    <task id="LOCAL-00001" summary="all working properly">
+      <created>1573340870756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573340870756</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="all working properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="all working properly" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1320" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1572635232763">
@@ -313,11 +309,15 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1242" y="446" key="IDE.errors.dialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572898279887" />
-    <state x="1477" y="259" key="SettingsEditor" timestamp="1572908411511">
+    <state x="1477" y="259" key="SettingsEditor" timestamp="1573341021918">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1477" y="259" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572908411511" />
+    <state x="1477" y="259" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1573341021918" />
     <state x="3384" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1572710424778" />
+    <state x="1319" y="432" key="Vcs.Push.Dialog.v2" timestamp="1573340891481">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1319" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1573340891481" />
     <state x="1476" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1573325171579">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -334,9 +334,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="894" y="367" key="run.anything.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1572988796532" />
-    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1573339963784">
+    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1573343901605">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1573339963784" />
+    <state x="1435" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1573343901605" />
   </component>
 </project>
